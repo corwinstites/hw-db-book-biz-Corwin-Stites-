@@ -1,0 +1,54 @@
+Corwin Stites - Entities and Properties
+Note: Worked with Edvard Ronglan
+
+/*
+
+Authors
+Books
+Publishers
+Editors 
+Customers
+Generes
+Orders
+AuthorName
+AuthorRoyalty
+OrderDate
+BookTitle
+PublisherName
+EditorName
+CustomerName
+GenreName
+
+/*
+
+/*
+
+AuthorID 
+BookID 
+PublisherID 
+EditorID 
+CustomerID 
+GenreID 
+OrderID 
+BooksAuthorsID 
+BooksOrdersID 
+BooksEditorsID 
+
+/*
+
+/*
+
+Books, Publishers, N:1
+Orders, Customers, N:1
+Books, Genres, N:1
+Books, Editors, N:N
+Books, Authors, N:N
+Books, Orders, N:N
+MapBooksAuthors, Books, N:1
+MapBooksAuthors, Authors, N:1
+MapBooksGenres, Genres, N:1
+MapBooksGenres, Books, N:1
+MapBooksOrders, Orders, N:1
+MapBooksOrders, Books, N:1
+
+/*

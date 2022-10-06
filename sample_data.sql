@@ -1,0 +1,36 @@
+use `booksales`;
+
+INSERT INTO `Publishers` VALUES(64819, 'Harper Collins');
+INSERT INTO `Publishers` VALUES(85628, 'Penguin Random House');
+INSERT INTO `Publishers` VALUES(34037, 'Simon & Schuster');
+
+INSERT INTO `Authors` VALUES(54374496, 2.54, 'John Steinbeck');
+INSERT INTO `Authors` VALUES(05363220, 4.67, 'Harper Lee');
+INSERT INTO `Authors` VALUES(64441377, 3.23, 'Ernest Hemingway');
+INSERT INTO `Authors` VALUES(55567755, 6.89, 'Jane Austen');
+INSERT INTO `Authors` VALUES(25289055, 0.00, 'Sun Tzu');
+
+INSERT INTO `Genres` VALUES(16, 'Military');
+INSERT INTO `Genres` VALUES(02, 'Fiction');
+
+INSERT INTO `Editors` VALUES(7772201, 'Bill Clark');
+INSERT INTO `Editors` VALUES(5777161, 'Karen Lopez');
+INSERT INTO `Editors` VALUES(1764503, 'Julia Smith');
+
+INSERT INTO `Books` VALUES(956104, 'For Whom the Bell Tolls', 3.23, 85628, 64441377, 02, 7772201);
+INSERT INTO `Books` VALUES(226955 , 'To Kill a Mockingbird', 4.67, 34037, 05363220, 02, 1764503);
+INSERT INTO `Books` VALUES(197911, 'The Grapes of Wrath', 2.54,  64819, 54374496, 02, 7772201);
+INSERT INTO `Books` VALUES(824264, 'Pride and Prejudice', 6.89,  64819, 55567755, 02, 5777161);
+INSERT INTO `Books` VALUES(873597, 'The Art of War', 0.00, 85628, 25289055, 16, 5777161);
+INSERT INTO `Books` VALUES(186945 , 'Of Mice and Men', 2.54,  34037, 54374496, 02, 1764503);
+
+INSERT INTO `Customers` VALUES(806979629, 'Tim Jones');
+INSERT INTO `Customers` VALUES(524671897, 'Kim Williams');
+INSERT INTO `Customers` VALUES(766123702, 'Jeff Miller');
+
+INSERT INTO `Orders` VALUES(35052, 524671897, 956104, '04APR22');
+INSERT INTO `Orders` VALUES(4118, 806979629, 226955, '06JUN22');
+INSERT INTO `Orders` VALUES(7771, 766123702, 186945, '19JUL22');
+INSERT INTO `Orders` VALUES(5575, 766123702, 226955,  '22SEP22');
+
+
